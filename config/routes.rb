@@ -10,4 +10,6 @@ Rubypair::Application.routes.draw do
   resources :users, only: [:edit, :update, :show] do
     resource :availability, module: :user
   end
+
+  resources :tickets
 end

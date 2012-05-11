@@ -1,0 +1,6 @@
+%h3 Available tickets to work on
+%h3 Add a ticket you are interested in working on
+=form_for(ticket) do |f|
+  = f.label :url, "Enter a GitHub Ticket URL:"
+  = f.url_field :url
+  = f.submit "Add Ticket"

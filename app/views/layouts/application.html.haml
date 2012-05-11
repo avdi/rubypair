@@ -23,6 +23,8 @@
           #menu
             %span= availability_links
             %span= '/'
+            %span= link_to 'Tickets', tickets_path
+            %span= '/'
             %span= link_to 'My profile', edit_user_path(current_user)
             %span= '/'
             %span= link_to 'Sign out', signout_path
