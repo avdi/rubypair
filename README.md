@@ -1,5 +1,10 @@
 # Overview
-This is an idea that came up during a break at a daylong session at Lone Star Ruby Conference and I quick registered the domain name. I thought it would be fun to find people who are willing to pair program in your area. So this is this start of such a project. Hopefully I can find others to help me with it and get it going (and keep me on it).
+
+This is an idea that came up during a break at a daylong session at
+Lone Star Ruby Conference and I quick registered the domain name. I
+thought it would be fun to find people who are willing to pair program
+in your area. So this is this start of such a project. Hopefully I can
+find others to help me with it and get it going (and keep me on it).
 
 ## Plan:
 * Page where Developers can login and make a profile, including the following:
@@ -11,7 +16,9 @@ This is an idea that came up during a break at a daylong session at Lone Star Ru
 * Comment on profile (talk positively how it was to pair with that person)
 
 ## Future:
-* Maybe a reward system (stars? rubyies?) that people can award someone who was helpful. Maybe sponsors can offer prizes.
+
+* Maybe a reward system (stars? rubyies?) that people can award
+  someone who was helpful. Maybe sponsors can offer prizes.
 
 # Setting up development environment
 
@@ -25,8 +32,12 @@ This is an idea that came up during a break at a daylong session at Lone Star Ru
     cp config/app_config.yml.example config/app_config.yml
   </pre>
 
-4.  [Register your app with Github](http://github.com/account/applications/new) to make authentication work
+4.  [Register your app with Github](https://github.com/settings/applications/new) to make authentication work
   - Main URL for development may vary, mine is ```http://localhost:3000``` since I just use Webrick
   - Callback URL is ```http://localhost:3000/auth/github/callback``` adjust your accordingly.
   - Update your `config/app_config.yml` with values supplied from Github's OAUTH app registration
-5.  Install MongoDB.  We recommend using [homebrew](https://github.com/mxcl/homebrew)
+
+5.  Install MongoDB.  For Mac users, we recommend using
+    [homebrew](https://github.com/mxcl/homebrew). Users of
+    Debian/Ubuntu can install the ```mongodb``` package using the
+    system package manager.
